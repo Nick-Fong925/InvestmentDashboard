@@ -1,0 +1,1 @@
+export const selectWatchlistItems = state => state.watchlist.watchlistItems;
