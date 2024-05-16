@@ -1,10 +1,13 @@
-import UI5Component from "./testUI5Components/UI5Component";
+import Header from "./header/Header.jsx";
+import Search from "./stockWatchList/Search.jsx";
+
 
 
 const App = () => {
   return (
     <div>
-      <UI5Component />
+      <Header/>
+      <Search/>
     </div>
   );
 };
