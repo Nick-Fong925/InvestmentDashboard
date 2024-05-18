@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Input, Button } from "@ui5/webcomponents-react";
-import { searchSymbol } from "../utils/apis.js";
+import { searchSymbol } from "../../utils/apis.js";
 import SearchResults from "./SearchResults.jsx";
 
 const Search = () => {
@@ -16,7 +16,6 @@ const Search = () => {
       }
     } catch (error) {
       setBestMatches([]);
-      console.log(error);
     }
   };
 
@@ -26,7 +25,7 @@ const Search = () => {
   };
 
   return (
-    <div className="my-4 w-96">
+    <div className="ml-5 my-4 w-96 relative">
       <div className="flex items-center border-2 rounded-md p-2 space-x-2">
         <Input
           value={input}
@@ -55,16 +54,13 @@ const Search = () => {
         />
       </div>
 
-      <div>
+      {/* Apply absolute positioning to the SearchResults */}
       {input && bestMatches.length > 0 && (
-        <div className="mt-4 w-full">
+        <div className="mt-4 w-full absolute top-10 left-0 bg-white z-10 border border-gray-300 shadow-lg">
           <SearchResults results={bestMatches} />
         </div>
       )}
-      </div>
-
     </div>
-
   );
 };
 

@@ -13,7 +13,7 @@ const Header = () => {
       showNotifications
       notificationsCount="0"
       logo={<img src={investmentIcon} alt="Logo" />}
-      profile={<Avatar initials="JD" />}
+      profile={<Avatar initials="MS" />}
     >
     </ShellBar>
   );

@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { List, CustomListItem, Button } from '@ui5/webcomponents-react';
 import '@ui5/webcomponents-icons/dist/add.js'; // Importing the "+" icon
 
 const SearchResults = ({ results }) => {
   const dispatch = useDispatch();
-  const watchlist = useSelector((state) => state.watchlist.watchlistItems);
 
   const addStockToWatchlist = (symbol) => {
     dispatch({
@@ -14,7 +13,6 @@ const SearchResults = ({ results }) => {
     });
   };
 
-  console.log('Watchlist:', watchlist);
 
   return (
     <List
@@ -50,3 +48,6 @@ SearchResults.propTypes = {
 };
 
 export default SearchResults;
+
+
+
