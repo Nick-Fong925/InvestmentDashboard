@@ -1,5 +1,7 @@
 # Investment Insights
 
+![Investment Dashboard](InvestmentDashboardImage.png)
+
 Welcome to the Investment Insights dashboard project! This project is a dynamic dashboard developed to monitor stock investments, providing real-time updates on stock prices, news, and percentage changes. The project leverages various technologies including React, SAPUI5, Tailwind, Finnhub API, and Jest for robust and comprehensive functionality.
 
 ## Technologies Used
